@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyShop.Models;
+using MyShop.ViewModels;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MyShop.Controllers;
 
@@ -19,8 +21,26 @@ public class OrderController : Controller
     }
 
     [HttpGet]
-    public IActionResult CreatOrderItem(){
-        return View();
+    public async Task<IActionResult> CreateOrderItem(){
+        var items = await _itemDbContext.Items.ToListAsync();
+        var orders = await _itemDbContext.Orders.ToListAsync();
+        var createOrderItemViewModel = new CreateOrderItemViewModel{
+            
+            OrderItem = new OrderItem(),
+
+            ItemSelectList = items.Select(item => new SelectListItem{
+                Value = item.ItemId.ToString(),
+                Text = item.ItemId.ToString() + ": " + item.Name
+            }).ToList(),
+
+            OrderSelectList = orders.Select(order => new SelectListItem{
+                Value = order.OrderId.ToString(),
+                Text = "Order" + order.OrderId.ToString() + ", Date: " + order.OrderDate + 
+                ", Customer: " + order.Customer.Name
+            }).ToList(),
+        };
+        return View(createOrderItemViewModel);
+
     }
 
     [HttpPost]
@@ -48,7 +68,8 @@ public class OrderController : Controller
             await _itemDbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Table));
         }
-        catch{
+        catch 
+        {
             return BadRequest("OrderItem creation failed.");
         }
     }
