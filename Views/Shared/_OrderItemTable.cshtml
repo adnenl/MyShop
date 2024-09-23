@@ -18,7 +18,10 @@
                 <td>@orderItem.Item.Name</td>
                 <td>@orderItem.Quantity</td>
                 <td>@orderItem.OrderItemPrice</td>
-                <td></td>
+                <td>
+                    <a asp-action="UpdateOrderItem" asp-route-id="@orderItem.ItemId">Update</a>
+                    <a asp-action="DeleteOrderItem" asp-route-id="@orderItem.ItemId">Delete</a>
+                </td>
             </tr>
         }
     </table>

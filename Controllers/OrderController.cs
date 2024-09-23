@@ -73,4 +73,24 @@ public class OrderController : Controller
             return BadRequest("OrderItem creation failed.");
         }
     }
+
+    [HttpGet]
+    public async Task<IActionResult> DeleteOrderItem(int id){
+        var orderItem = await _itemDbContext.OrderItems.FindAsync(id);
+        if (orderItem == null){
+            return NotFound();
+        }
+        return View(orderItem);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> DeleteOrderItemConfirmed(int id){
+        var orderItem = await _itemDbContext.OrderItems.FindAsync(id);
+        if (orderItem == null){
+            return NotFound();
+        }
+        _itemDbContext.OrderItems.Remove(orderItem);
+        await _itemDbContext.SaveChangesAsync();
+        return RedirectToAction(nameof(Table));
+    }
 }
