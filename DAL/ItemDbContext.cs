@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using MyShop.Models;
 
-namespace MyShop.Models;
+namespace MyShop.DAL;
 
 public class ItemDbContext : DbContext{
     public ItemDbContext(DbContextOptions<ItemDbContext> options) : base(options){

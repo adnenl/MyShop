@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using MyShop.Models;
 using MyShop.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using MyShop.DAL;
 
 namespace MyShop.Controllers;
 
