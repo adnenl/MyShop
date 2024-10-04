@@ -1,0 +1,59 @@
+2024-10-04 12:56:51.733 +02:00 [INF] User profile is available. Using '/Users/adnelongva/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-10-04 12:56:52.386 +02:00 [INF] Now listening on: https://localhost:7014
+2024-10-04 12:56:52.391 +02:00 [INF] Now listening on: http://localhost:5075
+2024-10-04 12:56:52.417 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-04 12:56:52.616 +02:00 [INF] Hosting environment: Development
+2024-10-04 12:56:52.629 +02:00 [INF] Content root path: /Users/adnelongva/Desktop/IT/3/Webapplikasjoner/MyShop/MyShop
+2024-10-04 12:56:52.779 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5075/ - null null
+2024-10-04 12:56:52.826 +02:00 [INF] Executing endpoint 'MyShop.Controllers.HomeController.Index (MyShop)'
+2024-10-04 12:56:52.842 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyShop.Controllers.HomeController (MyShop).
+2024-10-04 12:56:52.864 +02:00 [INF] Executing ViewResult, running view Index.
+2024-10-04 12:56:53.175 +02:00 [INF] Executed ViewResult - view Index executed in 98.829ms.
+2024-10-04 12:56:53.227 +02:00 [INF] Executed action MyShop.Controllers.HomeController.Index (MyShop) in 359.6697ms
+2024-10-04 12:56:53.227 +02:00 [INF] Executed endpoint 'MyShop.Controllers.HomeController.Index (MyShop)'
+2024-10-04 12:56:53.252 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5075/ - 200 null text/html; charset=utf-8 480.2489ms
+2024-10-04 12:57:13.762 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5075/Item/Table - null null
+2024-10-04 12:57:13.792 +02:00 [INF] Executing endpoint 'MyShop.Controllers.ItemController.Table (MyShop)'
+2024-10-04 12:57:13.800 +02:00 [INF] Route matched with {action = "Table", controller = "Item"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller MyShop.Controllers.ItemController (MyShop).
+2024-10-04 12:57:13.815 +02:00 [INF] This is an information message.
+2024-10-04 12:57:13.819 +02:00 [WRN] This is a warning message
+2024-10-04 12:57:13.824 +02:00 [ERR] This is an error message.
+2024-10-04 12:57:13.932 +02:00 [INF] Executing ViewResult, running view Table.
+2024-10-04 12:57:13.953 +02:00 [INF] Executed ViewResult - view Table executed in 21.4547ms.
+2024-10-04 12:57:13.953 +02:00 [INF] Executed action MyShop.Controllers.ItemController.Table (MyShop) in 152.5793ms
+2024-10-04 12:57:13.953 +02:00 [INF] Executed endpoint 'MyShop.Controllers.ItemController.Table (MyShop)'
+2024-10-04 12:57:14.075 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5075/images/ribs.jpg - null null
+2024-10-04 12:57:14.077 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5075/images/frenchfries.jpg - null null
+2024-10-04 12:57:14.077 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5075/images/coke.jpg - null null
+2024-10-04 12:57:14.077 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5075/images/cider.jpg - null null
+2024-10-04 12:57:14.077 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5075/Item/Table - 200 null text/html; charset=utf-8 315.5549ms
+2024-10-04 12:57:14.078 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5075/images/chickenleg.jpg - null null
+2024-10-04 12:57:14.119 +02:00 [INF] Sending file. Request path: '/images/coke.jpg'. Physical path: '/Users/adnelongva/Desktop/IT/3/Webapplikasjoner/MyShop/MyShop/wwwroot/images/coke.jpg'
+2024-10-04 12:57:14.119 +02:00 [INF] Sending file. Request path: '/images/frenchfries.jpg'. Physical path: '/Users/adnelongva/Desktop/IT/3/Webapplikasjoner/MyShop/MyShop/wwwroot/images/frenchfries.jpg'
+2024-10-04 12:57:14.119 +02:00 [INF] Sending file. Request path: '/images/chickenleg.jpg'. Physical path: '/Users/adnelongva/Desktop/IT/3/Webapplikasjoner/MyShop/MyShop/wwwroot/images/chickenleg.jpg'
+2024-10-04 12:57:14.119 +02:00 [INF] Sending file. Request path: '/images/cider.jpg'. Physical path: '/Users/adnelongva/Desktop/IT/3/Webapplikasjoner/MyShop/MyShop/wwwroot/images/cider.jpg'
+2024-10-04 12:57:14.132 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5075/images/frenchfries.jpg - 200 52799 image/jpeg 55.1233ms
+2024-10-04 12:57:14.132 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5075/images/cider.jpg - 200 28236 image/jpeg 54.43ms
+2024-10-04 12:57:14.132 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5075/images/chickenleg.jpg - 200 63434 image/jpeg 53.7546ms
+2024-10-04 12:57:14.132 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5075/images/coke.jpg - 200 40331 image/jpeg 54.9049ms
+2024-10-04 12:57:14.135 +02:00 [INF] Sending file. Request path: '/images/ribs.jpg'. Physical path: '/Users/adnelongva/Desktop/IT/3/Webapplikasjoner/MyShop/MyShop/wwwroot/images/ribs.jpg'
+2024-10-04 12:57:14.135 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5075/images/ribs.jpg - 200 141554 image/jpeg 65.8993ms
+2024-10-04 12:57:48.310 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5075/Item/Grid - null null
+2024-10-04 12:57:48.316 +02:00 [INF] Executing endpoint 'MyShop.Controllers.ItemController.Grid (MyShop)'
+2024-10-04 12:57:48.320 +02:00 [INF] Route matched with {action = "Grid", controller = "Item"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid() on controller MyShop.Controllers.ItemController (MyShop).
+2024-10-04 12:57:48.411 +02:00 [INF] Executing ViewResult, running view Grid.
+2024-10-04 12:57:48.434 +02:00 [INF] Executed ViewResult - view Grid executed in 24.8308ms.
+2024-10-04 12:57:48.435 +02:00 [INF] Executed action MyShop.Controllers.ItemController.Grid (MyShop) in 114.6149ms
+2024-10-04 12:57:48.435 +02:00 [INF] Executed endpoint 'MyShop.Controllers.ItemController.Grid (MyShop)'
+2024-10-04 12:57:48.436 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5075/Item/Grid - 200 null text/html; charset=utf-8 126.5154ms
+2024-10-04 12:57:49.537 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5075/Item/Table - null null
+2024-10-04 12:57:49.538 +02:00 [INF] Executing endpoint 'MyShop.Controllers.ItemController.Table (MyShop)'
+2024-10-04 12:57:49.539 +02:00 [INF] Route matched with {action = "Table", controller = "Item"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller MyShop.Controllers.ItemController (MyShop).
+2024-10-04 12:57:49.547 +02:00 [INF] This is an information message.
+2024-10-04 12:57:49.552 +02:00 [WRN] This is a warning message
+2024-10-04 12:57:49.556 +02:00 [ERR] This is an error message.
+2024-10-04 12:57:49.564 +02:00 [INF] Executing ViewResult, running view Table.
+2024-10-04 12:57:49.566 +02:00 [INF] Executed ViewResult - view Table executed in 2.0879ms.
+2024-10-04 12:57:49.566 +02:00 [INF] Executed action MyShop.Controllers.ItemController.Table (MyShop) in 26.3817ms
+2024-10-04 12:57:49.566 +02:00 [INF] Executed endpoint 'MyShop.Controllers.ItemController.Table (MyShop)'
+2024-10-04 12:57:49.566 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5075/Item/Table - 200 null text/html; charset=utf-8 29.8296ms
